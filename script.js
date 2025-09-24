@@ -1,4 +1,4 @@
-// Typing animation for hero text
+
 const typedTextElement = document.getElementById('typed-text');
 const phrases = [
   'Java Developer',
@@ -41,7 +41,7 @@ function type() {
   setTimeout(type, isDeleting ? deletingSpeed : typingSpeed);
 }
 
-// Scroll fade-in animation
+
 const sections = document.querySelectorAll('.section');
 
 function checkSectionVisibility() {
@@ -56,7 +56,6 @@ function checkSectionVisibility() {
   });
 }
 
-// Navbar hamburger toggle for mobile
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 const darkModeToggle = document.getElementById('darkModeToggle');
@@ -67,7 +66,7 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('show');
 });
 
-// Dark mode toggle
+
 darkModeToggle.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 
@@ -78,7 +77,6 @@ darkModeToggle.addEventListener('click', () => {
   }
 });
 
-// Initialize functions on page load and on scroll
 window.addEventListener('load', () => {
   type();
   checkSectionVisibility();
